@@ -55,12 +55,12 @@ pub const RAD_TO_DEG: f32 = 180.0 / PI;
 
 /// Converte graus para radianos.
 #[inline]
-pub const fn deg_to_rad(deg: f32) -> f32 {
+pub fn deg_to_rad(deg: f32) -> f32 {
     deg * DEG_TO_RAD
 }
 
 /// Converte radianos para graus.
 #[inline]
-pub const fn rad_to_deg(rad: f32) -> f32 {
+pub fn rad_to_deg(rad: f32) -> f32 {
     rad * RAD_TO_DEG
 }

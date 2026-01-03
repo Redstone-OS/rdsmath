@@ -8,7 +8,7 @@
 
 /// Mínimo entre dois valores.
 #[inline]
-pub const fn minf(a: f32, b: f32) -> f32 {
+pub fn minf(a: f32, b: f32) -> f32 {
     if a < b {
         a
     } else {
@@ -18,7 +18,7 @@ pub const fn minf(a: f32, b: f32) -> f32 {
 
 /// Máximo entre dois valores.
 #[inline]
-pub const fn maxf(a: f32, b: f32) -> f32 {
+pub fn maxf(a: f32, b: f32) -> f32 {
     if a > b {
         a
     } else {
@@ -28,7 +28,7 @@ pub const fn maxf(a: f32, b: f32) -> f32 {
 
 /// Clamp de valor entre min e max.
 #[inline]
-pub const fn clampf(x: f32, min: f32, max: f32) -> f32 {
+pub fn clampf(x: f32, min: f32, max: f32) -> f32 {
     if x < min {
         min
     } else if x > max {
@@ -40,7 +40,7 @@ pub const fn clampf(x: f32, min: f32, max: f32) -> f32 {
 
 /// Clamp de valor entre 0 e 1 (saturate).
 #[inline]
-pub const fn saturatef(x: f32) -> f32 {
+pub fn saturatef(x: f32) -> f32 {
     clampf(x, 0.0, 1.0)
 }
 
@@ -52,7 +52,7 @@ pub const fn saturatef(x: f32) -> f32 {
 ///
 /// t=0 retorna a, t=1 retorna b.
 #[inline]
-pub const fn lerpf(a: f32, b: f32, t: f32) -> f32 {
+pub fn lerpf(a: f32, b: f32, t: f32) -> f32 {
     a + (b - a) * t
 }
 
@@ -99,7 +99,7 @@ pub fn smootherstepf(edge0: f32, edge1: f32, x: f32) -> f32 {
 ///
 /// Retorna 0 se x < edge, 1 caso contrário.
 #[inline]
-pub const fn stepf(edge: f32, x: f32) -> f32 {
+pub fn stepf(edge: f32, x: f32) -> f32 {
     if x < edge {
         0.0
     } else {
@@ -109,7 +109,7 @@ pub const fn stepf(edge: f32, x: f32) -> f32 {
 
 /// Mix (alias para lerp).
 #[inline]
-pub const fn mixf(a: f32, b: f32, t: f32) -> f32 {
+pub fn mixf(a: f32, b: f32, t: f32) -> f32 {
     lerpf(a, b, t)
 }
 

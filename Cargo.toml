@@ -1,10 +1,15 @@
 [package]
 name = "rdsmath"
 version = "0.1.0"
-authors = ["RedstoneOS Team"]
+authors = ["MikeLanDSBR <contato@mikelandsbr.com.br>"]
 edition = "2021"
 description = "Minimal math library for no_std environments - RedstoneOS"
 license = "MIT"
+repository = "https://github.com/redstone-os/rdsmath"
+documentation = "https://docs.rs/rdsmath"
+readme = "README.md"
+keywords = ["math", "no_std", "trigonometry", "redstone", "embedded"]
+categories = ["no-std", "mathematics"]
 
 [lib]
 harness = false
