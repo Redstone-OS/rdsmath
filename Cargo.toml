@@ -1,0 +1,16 @@
+[package]
+name = "rdsmath"
+version = "0.1.0"
+authors = ["RedstoneOS Team"]
+edition = "2021"
+description = "Minimal math library for no_std environments - RedstoneOS"
+license = "MIT"
+
+[lib]
+harness = false
+test = false
+bench = false
+doctest = false
+
+[features]
+default = []
